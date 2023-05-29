@@ -10,10 +10,10 @@
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "build:eleventy": "npx @11ty/eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npx @11ty/eleventy"
+    "build": "npm-run-all build:sass --parallel build:*"
   },
   "keywords": [],
-  "author": "",
+  "author": "Denis",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
