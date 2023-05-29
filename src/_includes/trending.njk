@@ -1,0 +1,8 @@
+<section class="trending">
+    <h2 class="trending__title visually-hidden">Trending News</h2>
+    <ul class="trending__list">
+        {% for trending in collections.trending %}
+            {% include "trending-card.njk" %}
+        {% endfor %}
+    </ul>
+</section>

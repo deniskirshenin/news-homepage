@@ -1,0 +1,10 @@
+<div class="news__container">
+    <section class="news">
+    <h2 class="news__title">New</h2>
+    <ul class="news__list">
+        {% for news in collections.news %}
+            {% include "news-card.njk" %}
+        {% endfor %}
+    </ul>
+    </section>
+</div>
